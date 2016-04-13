@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
+
 	void FixedUpdate ()
 	{
 		//Horizontal beweging Speler
@@ -47,8 +48,7 @@ public class PlayerMovement : MonoBehaviour
 		//Jump
 
 		Vector2 playerFacingX = _rigid.velocity.normalized;
-		//Als W ingedrukt & Speler KAN springen
-		if (Input.GetButton ("Fire1") && playerCanJump && playerOnGround)
+		if (Input.GetKeyDown(KeyCode.Space) && playerCanJump && playerOnGround)
 		{
 			//Schop de speler omhoog, Kan Niet nogmaals springen & TimeOut op Max & Not on Ground
 			//_rigid.AddForce (new Vector2 (_rigid.velocity.x, playerJumpForce * playerSpeed));
@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 		if (other.gameObject.tag == "Ground") 
 		{
 			playerOnGround = true;
+			print(playerOnGround);
 		}
 	}
 }

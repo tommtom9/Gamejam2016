@@ -72,3 +72,5 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 'Assets/scripts/PlayerMovement.cs'
+'Assets/scripts/Spawning.cs'
+'Assets/scripts/SwitchScene.cs'
