@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Tom.unity
-=======
-- path: Assets/scenes/IanMunster.unity
->>>>>>> origin/master
+- path: Assets/scenes/Tom.unity
   isLoaded: 1
   isActive: 1
